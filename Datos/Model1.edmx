@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="acuarioModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="pDulce">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fecha" Type="date" Nullable="false" />
+          <Property Name="ph" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="gh" Type="int" />
+          <Property Name="kh" Type="int" />
+          <Property Name="no2" Type="decimal" Precision="2" Scale="2" />
+          <Property Name="no3" Type="decimal" Precision="2" Scale="2" />
+          <Property Name="nh4" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="temperatura" Type="decimal" Precision="3" Scale="1" />
+        </EntityType>
+        <EntityType Name="pMarino">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fecha" Type="date" Nullable="false" />
+          <Property Name="calcio" Type="int" />
+          <Property Name="alcalinidad" Type="int" />
+          <Property Name="salinidad" Type="int" />
+          <Property Name="temperatura" Type="decimal" Precision="3" Scale="2" />
+          <Property Name="ph" Type="decimal" Precision="3" Scale="1" />
+          <Property Name="magnesio" Type="int" />
+          <Property Name="fosfato" Type="decimal" Precision="3" Scale="2" />
+          <Property Name="amoniaco" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="potasio" Type="int" />
+          <Property Name="silicio" Type="decimal" Precision="3" Scale="2" />
+          <Property Name="nitritos" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="nitratos" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="estroncio" Type="int" />
+          <Property Name="boro" Type="decimal" Precision="2" Scale="1" />
+          <Property Name="hierro" Type="decimal" Precision="2" Scale="1" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="usuario" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="nchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="acuarioModelStoreContainer">
+          <EntitySet Name="pDulce" EntityType="Self.pDulce" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="pMarino" EntityType="Self.pMarino" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="acuarioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="pDulce">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ph" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="gh" Type="Int32" />
+          <Property Name="kh" Type="Int32" />
+          <Property Name="no2" Type="Decimal" Precision="2" Scale="2" />
+          <Property Name="no3" Type="Decimal" Precision="2" Scale="2" />
+          <Property Name="nh4" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="temperatura" Type="Decimal" Precision="3" Scale="1" />
+        </EntityType>
+        <EntityType Name="pMarino">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="calcio" Type="Int32" />
+          <Property Name="alcalinidad" Type="Int32" />
+          <Property Name="salinidad" Type="Int32" />
+          <Property Name="temperatura" Type="Decimal" Precision="3" Scale="2" />
+          <Property Name="ph" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="magnesio" Type="Int32" />
+          <Property Name="fosfato" Type="Decimal" Precision="3" Scale="2" />
+          <Property Name="amoniaco" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="potasio" Type="Int32" />
+          <Property Name="silicio" Type="Decimal" Precision="3" Scale="2" />
+          <Property Name="nitritos" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="nitratos" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="estroncio" Type="Int32" />
+          <Property Name="boro" Type="Decimal" Precision="2" Scale="1" />
+          <Property Name="hierro" Type="Decimal" Precision="2" Scale="1" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usuario" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="acuarioEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="pDulce" EntityType="Self.pDulce" />
+          <EntitySet Name="pMarino" EntityType="Self.pMarino" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="acuarioModelStoreContainer" CdmEntityContainer="acuarioEntities">
+          <EntitySetMapping Name="pDulce">
+            <EntityTypeMapping TypeName="acuarioModel.pDulce">
+              <MappingFragment StoreEntitySet="pDulce">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="ph" ColumnName="ph" />
+                <ScalarProperty Name="gh" ColumnName="gh" />
+                <ScalarProperty Name="kh" ColumnName="kh" />
+                <ScalarProperty Name="no2" ColumnName="no2" />
+                <ScalarProperty Name="no3" ColumnName="no3" />
+                <ScalarProperty Name="nh4" ColumnName="nh4" />
+                <ScalarProperty Name="temperatura" ColumnName="temperatura" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pMarino">
+            <EntityTypeMapping TypeName="acuarioModel.pMarino">
+              <MappingFragment StoreEntitySet="pMarino">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="calcio" ColumnName="calcio" />
+                <ScalarProperty Name="alcalinidad" ColumnName="alcalinidad" />
+                <ScalarProperty Name="salinidad" ColumnName="salinidad" />
+                <ScalarProperty Name="temperatura" ColumnName="temperatura" />
+                <ScalarProperty Name="ph" ColumnName="ph" />
+                <ScalarProperty Name="magnesio" ColumnName="magnesio" />
+                <ScalarProperty Name="fosfato" ColumnName="fosfato" />
+                <ScalarProperty Name="amoniaco" ColumnName="amoniaco" />
+                <ScalarProperty Name="potasio" ColumnName="potasio" />
+                <ScalarProperty Name="silicio" ColumnName="silicio" />
+                <ScalarProperty Name="nitritos" ColumnName="nitritos" />
+                <ScalarProperty Name="nitratos" ColumnName="nitratos" />
+                <ScalarProperty Name="estroncio" ColumnName="estroncio" />
+                <ScalarProperty Name="boro" ColumnName="boro" />
+                <ScalarProperty Name="hierro" ColumnName="hierro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="acuarioModel.usuarios">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
