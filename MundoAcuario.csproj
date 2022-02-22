@@ -78,6 +78,7 @@
     <Compile Include="Datos\usuarios.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\struct_db.cs" />
     <Compile Include="Presentacion\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,8 +146,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
