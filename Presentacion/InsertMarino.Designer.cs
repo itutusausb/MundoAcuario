@@ -35,17 +35,17 @@ namespace MundoAcuario.Presentacion
             this.txtal = new System.Windows.Forms.TextBox();
             this.txtsal = new System.Windows.Forms.TextBox();
             this.txttemp = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtph = new System.Windows.Forms.TextBox();
             this.txtmg = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtfosf = new System.Windows.Forms.TextBox();
             this.txtamo = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtpota = new System.Windows.Forms.TextBox();
+            this.txtsili = new System.Windows.Forms.TextBox();
+            this.txtnitri = new System.Windows.Forms.TextBox();
+            this.txtnitrat = new System.Windows.Forms.TextBox();
+            this.txtstron = new System.Windows.Forms.TextBox();
+            this.txtboro = new System.Windows.Forms.TextBox();
+            this.txthierro = new System.Windows.Forms.TextBox();
             this.labelca = new System.Windows.Forms.Label();
             this.labelal = new System.Windows.Forms.Label();
             this.labelsal = new System.Windows.Forms.Label();
@@ -54,6 +54,14 @@ namespace MundoAcuario.Presentacion
             this.labelmg = new System.Windows.Forms.Label();
             this.labelfos = new System.Windows.Forms.Label();
             this.labelamo = new System.Windows.Forms.Label();
+            this.labelpot = new System.Windows.Forms.Label();
+            this.labelsi = new System.Windows.Forms.Label();
+            this.labelnit = new System.Windows.Forms.Label();
+            this.labelnitratos = new System.Windows.Forms.Label();
+            this.labelestroncio = new System.Windows.Forms.Label();
+            this.labelboro = new System.Windows.Forms.Label();
+            this.labelhie = new System.Windows.Forms.Label();
+            this.btninsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,6 +77,7 @@ namespace MundoAcuario.Presentacion
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(50, 95);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
@@ -102,12 +111,12 @@ namespace MundoAcuario.Presentacion
             this.txttemp.Size = new System.Drawing.Size(142, 20);
             this.txttemp.TabIndex = 5;
             // 
-            // textBox5
+            // txtph
             // 
-            this.textBox5.Location = new System.Drawing.Point(50, 353);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(142, 20);
-            this.textBox5.TabIndex = 6;
+            this.txtph.Location = new System.Drawing.Point(50, 353);
+            this.txtph.Name = "txtph";
+            this.txtph.Size = new System.Drawing.Size(142, 20);
+            this.txtph.TabIndex = 6;
             // 
             // txtmg
             // 
@@ -116,12 +125,12 @@ namespace MundoAcuario.Presentacion
             this.txtmg.Size = new System.Drawing.Size(142, 20);
             this.txtmg.TabIndex = 7;
             // 
-            // textBox7
+            // txtfosf
             // 
-            this.textBox7.Location = new System.Drawing.Point(366, 144);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(142, 20);
-            this.textBox7.TabIndex = 8;
+            this.txtfosf.Location = new System.Drawing.Point(366, 144);
+            this.txtfosf.Name = "txtfosf";
+            this.txtfosf.Size = new System.Drawing.Size(142, 20);
+            this.txtfosf.TabIndex = 8;
             // 
             // txtamo
             // 
@@ -130,54 +139,54 @@ namespace MundoAcuario.Presentacion
             this.txtamo.Size = new System.Drawing.Size(142, 20);
             this.txtamo.TabIndex = 9;
             // 
-            // textBox9
+            // txtpota
             // 
-            this.textBox9.Location = new System.Drawing.Point(366, 249);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(142, 20);
-            this.textBox9.TabIndex = 10;
+            this.txtpota.Location = new System.Drawing.Point(366, 249);
+            this.txtpota.Name = "txtpota";
+            this.txtpota.Size = new System.Drawing.Size(142, 20);
+            this.txtpota.TabIndex = 10;
             // 
-            // textBox10
+            // txtsili
             // 
-            this.textBox10.Location = new System.Drawing.Point(366, 301);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(142, 20);
-            this.textBox10.TabIndex = 11;
+            this.txtsili.Location = new System.Drawing.Point(366, 301);
+            this.txtsili.Name = "txtsili";
+            this.txtsili.Size = new System.Drawing.Size(142, 20);
+            this.txtsili.TabIndex = 11;
             // 
-            // textBox11
+            // txtnitri
             // 
-            this.textBox11.Location = new System.Drawing.Point(366, 353);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(142, 20);
-            this.textBox11.TabIndex = 12;
+            this.txtnitri.Location = new System.Drawing.Point(366, 353);
+            this.txtnitri.Name = "txtnitri";
+            this.txtnitri.Size = new System.Drawing.Size(142, 20);
+            this.txtnitri.TabIndex = 12;
             // 
-            // textBox12
+            // txtnitrat
             // 
-            this.textBox12.Location = new System.Drawing.Point(366, 405);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(142, 20);
-            this.textBox12.TabIndex = 13;
+            this.txtnitrat.Location = new System.Drawing.Point(366, 405);
+            this.txtnitrat.Name = "txtnitrat";
+            this.txtnitrat.Size = new System.Drawing.Size(142, 20);
+            this.txtnitrat.TabIndex = 13;
             // 
-            // textBox13
+            // txtstron
             // 
-            this.textBox13.Location = new System.Drawing.Point(649, 144);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(142, 20);
-            this.textBox13.TabIndex = 14;
+            this.txtstron.Location = new System.Drawing.Point(649, 144);
+            this.txtstron.Name = "txtstron";
+            this.txtstron.Size = new System.Drawing.Size(142, 20);
+            this.txtstron.TabIndex = 14;
             // 
-            // textBox14
+            // txtboro
             // 
-            this.textBox14.Location = new System.Drawing.Point(649, 197);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(142, 20);
-            this.textBox14.TabIndex = 15;
+            this.txtboro.Location = new System.Drawing.Point(649, 197);
+            this.txtboro.Name = "txtboro";
+            this.txtboro.Size = new System.Drawing.Size(142, 20);
+            this.txtboro.TabIndex = 15;
             // 
-            // textBox15
+            // txthierro
             // 
-            this.textBox15.Location = new System.Drawing.Point(649, 249);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(142, 20);
-            this.textBox15.TabIndex = 16;
+            this.txthierro.Location = new System.Drawing.Point(649, 249);
+            this.txthierro.Name = "txthierro";
+            this.txthierro.Size = new System.Drawing.Size(142, 20);
+            this.txthierro.TabIndex = 16;
             // 
             // labelca
             // 
@@ -251,11 +260,92 @@ namespace MundoAcuario.Presentacion
             this.labelamo.TabIndex = 24;
             this.labelamo.Text = "Amoniaco:";
             // 
+            // labelpot
+            // 
+            this.labelpot.AutoSize = true;
+            this.labelpot.Location = new System.Drawing.Point(363, 233);
+            this.labelpot.Name = "labelpot";
+            this.labelpot.Size = new System.Drawing.Size(45, 13);
+            this.labelpot.TabIndex = 25;
+            this.labelpot.Text = "Potasio:";
+            // 
+            // labelsi
+            // 
+            this.labelsi.AutoSize = true;
+            this.labelsi.Location = new System.Drawing.Point(363, 285);
+            this.labelsi.Name = "labelsi";
+            this.labelsi.Size = new System.Drawing.Size(37, 13);
+            this.labelsi.TabIndex = 26;
+            this.labelsi.Text = "Silicio:";
+            // 
+            // labelnit
+            // 
+            this.labelnit.AutoSize = true;
+            this.labelnit.Location = new System.Drawing.Point(363, 337);
+            this.labelnit.Name = "labelnit";
+            this.labelnit.Size = new System.Drawing.Size(42, 13);
+            this.labelnit.TabIndex = 27;
+            this.labelnit.Text = "Nitritos:";
+            // 
+            // labelnitratos
+            // 
+            this.labelnitratos.AutoSize = true;
+            this.labelnitratos.Location = new System.Drawing.Point(366, 389);
+            this.labelnitratos.Name = "labelnitratos";
+            this.labelnitratos.Size = new System.Drawing.Size(46, 13);
+            this.labelnitratos.TabIndex = 28;
+            this.labelnitratos.Text = "Nitratos:";
+            // 
+            // labelestroncio
+            // 
+            this.labelestroncio.AutoSize = true;
+            this.labelestroncio.Location = new System.Drawing.Point(646, 128);
+            this.labelestroncio.Name = "labelestroncio";
+            this.labelestroncio.Size = new System.Drawing.Size(54, 13);
+            this.labelestroncio.TabIndex = 29;
+            this.labelestroncio.Text = "Estroncio:";
+            // 
+            // labelboro
+            // 
+            this.labelboro.AutoSize = true;
+            this.labelboro.Location = new System.Drawing.Point(646, 181);
+            this.labelboro.Name = "labelboro";
+            this.labelboro.Size = new System.Drawing.Size(32, 13);
+            this.labelboro.TabIndex = 30;
+            this.labelboro.Text = "Boro:";
+            // 
+            // labelhie
+            // 
+            this.labelhie.AutoSize = true;
+            this.labelhie.Location = new System.Drawing.Point(646, 233);
+            this.labelhie.Name = "labelhie";
+            this.labelhie.Size = new System.Drawing.Size(38, 13);
+            this.labelhie.TabIndex = 31;
+            this.labelhie.Text = "Hierro:";
+            // 
+            // btninsert
+            // 
+            this.btninsert.Location = new System.Drawing.Point(649, 297);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(75, 23);
+            this.btninsert.TabIndex = 32;
+            this.btninsert.Text = "Insertar";
+            this.btninsert.UseVisualStyleBackColor = true;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
+            // 
             // InsertMarino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 534);
+            this.Controls.Add(this.btninsert);
+            this.Controls.Add(this.labelhie);
+            this.Controls.Add(this.labelboro);
+            this.Controls.Add(this.labelestroncio);
+            this.Controls.Add(this.labelnitratos);
+            this.Controls.Add(this.labelnit);
+            this.Controls.Add(this.labelsi);
+            this.Controls.Add(this.labelpot);
             this.Controls.Add(this.labelamo);
             this.Controls.Add(this.labelfos);
             this.Controls.Add(this.labelmg);
@@ -264,17 +354,17 @@ namespace MundoAcuario.Presentacion
             this.Controls.Add(this.labelsal);
             this.Controls.Add(this.labelal);
             this.Controls.Add(this.labelca);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txthierro);
+            this.Controls.Add(this.txtboro);
+            this.Controls.Add(this.txtstron);
+            this.Controls.Add(this.txtnitrat);
+            this.Controls.Add(this.txtnitri);
+            this.Controls.Add(this.txtsili);
+            this.Controls.Add(this.txtpota);
             this.Controls.Add(this.txtamo);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtfosf);
             this.Controls.Add(this.txtmg);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtph);
             this.Controls.Add(this.txttemp);
             this.Controls.Add(this.txtsal);
             this.Controls.Add(this.txtal);
@@ -297,17 +387,17 @@ namespace MundoAcuario.Presentacion
         private System.Windows.Forms.TextBox txtal;
         private System.Windows.Forms.TextBox txtsal;
         private System.Windows.Forms.TextBox txttemp;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtph;
         private System.Windows.Forms.TextBox txtmg;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtfosf;
         private System.Windows.Forms.TextBox txtamo;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtpota;
+        private System.Windows.Forms.TextBox txtsili;
+        private System.Windows.Forms.TextBox txtnitri;
+        private System.Windows.Forms.TextBox txtnitrat;
+        private System.Windows.Forms.TextBox txtstron;
+        private System.Windows.Forms.TextBox txtboro;
+        private System.Windows.Forms.TextBox txthierro;
         private System.Windows.Forms.Label labelca;
         private System.Windows.Forms.Label labelal;
         private System.Windows.Forms.Label labelsal;
@@ -316,5 +406,13 @@ namespace MundoAcuario.Presentacion
         private System.Windows.Forms.Label labelmg;
         private System.Windows.Forms.Label labelfos;
         private System.Windows.Forms.Label labelamo;
+        private System.Windows.Forms.Label labelpot;
+        private System.Windows.Forms.Label labelsi;
+        private System.Windows.Forms.Label labelnit;
+        private System.Windows.Forms.Label labelnitratos;
+        private System.Windows.Forms.Label labelestroncio;
+        private System.Windows.Forms.Label labelboro;
+        private System.Windows.Forms.Label labelhie;
+        private System.Windows.Forms.Button btninsert;
     }
 }
