@@ -31,7 +31,7 @@ namespace MundoAcuario.Presentacion
             marino.magnesio = int.Parse(txtmg.Text);
             marino.fosfato = decimal.Parse(txtfosf.Text);
             marino.amoniaco = decimal.Parse(txtamo.Text);
-            marino.potasio = int.Parse(txtamo.Text);
+            marino.potasio = int.Parse(txtpota.Text);
             marino.silicio = decimal.Parse(txtsili.Text);
             marino.nitritos = decimal.Parse(txtnitri.Text);
             marino.nitratos = decimal.Parse(txtnitrat.Text);
@@ -46,8 +46,27 @@ namespace MundoAcuario.Presentacion
 
                 db.pMarino.Add(marino);
                 db.SaveChanges();
-
+                limpiar();
             }
+        }
+
+        private void limpiar()
+        {
+            txtca.Text = "";
+            txtal.Text = "";
+            txtsal.Text = "";
+            txttemp.Text = "";
+            txtph.Text = "";
+            txtmg.Text = "";
+            txtfosf.Text = "";
+            txtamo.Text = "";
+            txtpota.Text = "";
+            txtsili.Text = "";
+            txtnitri.Text = "";
+            txtnitrat.Text = "";
+            txtstron.Text = "";
+            txtboro.Text = "";
+            txthierro.Text = "";
         }
     }
 }
